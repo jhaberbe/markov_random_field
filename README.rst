@@ -31,6 +31,17 @@ Features
 Credits
 -------
 
+This package borrows almost everything from this repository:
+        https://github.com/lucananni93/Hidden-Markov-Random-Fields/blob/master/image_segmentation/main.py
+
+I made small QoL improvements (using scipy.signal.convolve2d instead of iterating through all the pixels to make this faster). 
+
+
+As a small benchmark, an image of size (14930, 20226) with 4 classes takes 20m 40.7s to run on a cluster with 20 cores and 100 GB of RAM. 
+Likely it doesn't require that much memory to run, however your mileage will vary.
+
+
+
 This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
