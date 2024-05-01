@@ -18,7 +18,11 @@ classifiers = [
 ]
 license = {text = "MIT license"}
 dependencies = [
-  
+  "numpy",
+  "pandas",
+  "matplotlib",
+  "sklearn",
+  "scipy"
 ]
 
 [project.optional-dependencies]
