@@ -22,6 +22,16 @@ Markov Random Field for Image Segmentation
 * Free software: MIT license
 * Documentation: https://markov-random-field.readthedocs.io.
 
+Usage
+--------
+
+For a given grayscale image 'image_array', you do the followimg:
+
+import markov_random_field.markov_random_field
+hmrf = markov_random_field.markov_random_field.HiddenMarkovRandomField(n_classes=4) 
+pixel_level_classified_image_array = hmrf.fit(grayscale)
+
+That's it.
 
 Features
 --------
