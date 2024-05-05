@@ -38,7 +38,7 @@ I made small QoL improvements (using scipy.signal.convolve2d instead of iteratin
 
 
 As a small benchmark, an image of size (14930, 20226) with 4 classes takes 20m 40.7s to run on a cluster with 20 cores and 100 GB of RAM. 
-Likely it doesn't require that much memory to run, however your mileage will vary.
+It probably required nowhere near that amount of memory to run, however your mileage will vary.
 
 
 
