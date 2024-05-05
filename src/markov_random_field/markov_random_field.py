@@ -143,7 +143,7 @@ class HiddenMarkovRandomField:
         plt.show()
 
         print("Initializing parameters")
-        X, means, stds = self.estimate_initial_parameters(Y, self.n_classes)
+        X, means, stds = self.estimate_initial_parameters(Y)
 
         plt.imshow(X)
         plt.title("KMeans estimated states (X)")
