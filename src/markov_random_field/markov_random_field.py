@@ -61,7 +61,7 @@ class HiddenMarkovRandomField:
         data = pd.DataFrame({
             'c1': xx.reshape(-1),
             'c2': yy.reshape(-1),
-            'value': X.reshape(-1)
+            'value': image.reshape(-1)
         })
         return data
 
