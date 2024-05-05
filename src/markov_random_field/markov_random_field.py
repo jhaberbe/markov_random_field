@@ -92,7 +92,7 @@ class HiddenMarkovRandomField:
         Returns:
             np.array: int labels of kmeans clustering of pixel values.
         """
-        k_means = KMeans(n_clusters=self.n_clusters)
+        k_means = KMeans(n_clusters=self.n_classes)
         k_means.fit(data)
         return k_means.labels_
 
