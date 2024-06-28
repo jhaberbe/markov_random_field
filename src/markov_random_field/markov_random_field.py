@@ -142,7 +142,7 @@ class HiddenMarkovRandomField:
         Y = image/255#[20:-20, 20:300]/255
 
         plt.imshow(Y)
-        plt.title("Input image (Y) with noise")
+        plt.title("Input image (Y)")
         plt.show()
 
         print("Initializing parameters")
