@@ -122,7 +122,10 @@ class HiddenMarkovRandomField:
             s_std = data_s.value.std()
             means[s] = s_mean
             stds[s] = s_std
-        return X, means, stds
+        
+        # FIXME: I'm ashamed to be such a hack. 
+        df = pd.DataFrame(dict(means = means, stds = stds)).sort_values(by="means")
+        return X, df["means"].to_numpy(), df["stds"].to_numpy()
 
 
 

@@ -37,6 +37,7 @@ Features
 --------
 
 * TODO
+1) Sort class labels by pixel means (0 for smallest, n for largest). 
 
 Credits
 -------
